@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "751512906322",
+    "firebase_url": "https://wedwise-app-1535104268391.firebaseio.com",
+    "project_id": "wedwise-app-1535104268391",
+    "storage_bucket": "wedwise-app-1535104268391.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:751512906322:android:9da3a0bc69beab6c",
+        "android_client_info": {
+          "package_name": "com.wedwise.wedwise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "751512906322-haa4cfsmbnojo6k6unllk3qrabaesr0e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB7RgiFvgMq9W8xHRHv-UprPon2moDmdt0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

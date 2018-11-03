@@ -1,0 +1,102 @@
+// http://ionicframework.com/docs/theming/
+
+
+// App Global Sass
+// --------------------------------------------------
+// Put style rules here that you want to apply globally. These
+// styles are for the entire app and not just one component.
+// Additionally, this file can be also used as an entry point
+// to import other Sass files to be included in the output CSS.
+//
+// Shared Sass variables, which can be used to adjust Ionic's
+// default Sass variables, belong in "theme/variables.scss".
+//
+// To declare rules for a specific mode, create a child rule
+// for the .md, .ios, or .wp mode classes. The mode class is
+// automatically applied to the <body> element in the app.
+
+
+ion-icon {
+    &[class*="svg-"] {
+        -webkit-mask-size: contain;
+        -webkit-mask-position: 50% 50%;
+        -webkit-mask-repeat: no-repeat;
+        background: currentColor;
+        width: 10px;
+        height: 10px;
+
+
+    }
+
+
+
+
+
+
+
+.item-label-floating .input-wrapper {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    border-bottom: 1px solid #ffffff9c;
+}
+
+ .card-md {
+    margin: 10px 10px 0px;
+    border-radius: 2px;
+    width: calc(100% - 20px);
+    font-size: 1.4rem;
+    background: none;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+    &[class*="svg-find"] {
+        -webkit-mask-image: url(../assets/svg/find.svg);
+    }
+    &[class*="svg-search"] {
+        -webkit-mask-image: url(../assets/svg/search.svg);
+    }
+    &[class*="svg-heart"] {
+        -webkit-mask-image: url(../assets/svg/heart.svg);
+    }
+    &[class*="svg-guest"] {
+        -webkit-mask-image: url(../assets/svg/guest.svg);
+    }
+    &[class*="svg-check"] {
+        -webkit-mask-image: url(../assets/svg/checklist.svg);
+    }
+    &[class*="svg-setting"] {
+        -webkit-mask-image: url(../assets/svg/settings.svg);
+    }
+        &[class*="svg-help"] {
+        -webkit-mask-image: url(../assets/svg/circles.svg);
+    }
+    &[class*="svg-logout"] {
+        -webkit-mask-image: url(../assets/svg/logout.svg);
+    }
+    &[class*="svg-info"] {
+        -webkit-mask-image: url(../assets/svg/info.svg);
+    }
+    &[class*="svg-message"] {
+        -webkit-mask-image: url(../assets/svg/message.svg);
+    }
+
+}
+
+
+
+.page-chatting.item-md {
+
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    background-color: #fff;
+    
+}
+
+

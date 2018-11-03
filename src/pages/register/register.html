@@ -1,0 +1,77 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header  style="background: #5e2f6f;color: white">
+
+    <ion-navbar >
+
+        <ion-buttons left>
+        <button ion-button (click)="back()">
+             <ion-icon ios="ios-arrow-back" md="md-arrow-back" style="zoom:1.3;"></ion-icon>
+        </button>
+    </ion-buttons>
+
+        <ion-title>Register</ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content  class="background">
+
+
+ <ion-grid>
+    <ion-row>
+     <ion-col>
+      <img src="{{photo}}" *ngIf="this.global.shoimg==true" class="slide-image"  on-tap="openGallery(1)" style="width: 40%;height:81%;display: block; margin:auto; border-radius: 50%"/>
+       <img src="assets/imgs/registericon2.png"  *ngIf="this.global.shoimg==false"   on-tap="openGallery(1)" class="slide-image" style="width: 35%;height: 81%;display: block; margin:auto;"/>
+            
+         
+
+          </ion-col>
+
+        </ion-row>
+          
+        
+         </ion-grid>
+
+<div class="register-form">
+
+<ion-card>
+             
+               <ion-item>
+                   
+
+                   <ion-label floating ><div class="font">First Name</div></ion-label>
+                  <ion-input required type="test" [(ngModel)]="form.firstName" name="firstname" class="font"></ion-input>
+               </ion-item>
+               <ion-item>
+                   <ion-label floating ><div class="font">Last Name</div></ion-label>
+                  <ion-input required type="test" [(ngModel)]="form.lastName" name="lastname" class="font"></ion-input>
+               </ion-item>
+               <ion-item>
+                   
+                    <ion-label floating ><div class="font">Email</div></ion-label>
+                  <ion-input required type="email" [(ngModel)]="form.email" name="email" class="font"></ion-input>
+               </ion-item>
+               <ion-item>
+                  <ion-label floating ><div class="font">Password</div></ion-label>
+                  <ion-input required type="password" [(ngModel)]="form.password" name="password" class="font"></ion-input>
+               </ion-item>
+             </ion-card>
+
+            <div class="error-message">
+               <ion-label color="danger" text-wrap>{{errorRegisterMessage}}</ion-label>
+            </div>
+            <div class="row">
+               <button style="margin: 20px 20px 0 20px" class="login-button" ion-button block color="purple" type="submit" class="button button-block button-default" text-uppercase [disabled]="disableRegister" (click)="register()">{{buttonText}}</button>
+               <br>
+               <button style="margin: 0px 20px 20px 20px"class="forgot-button" ion-button clear color="light" type="submit" class="button button-block button-clear" (click)="goToLogin()">Back to login</button>
+            </div>
+
+   </div>
+
+
+</ion-content>

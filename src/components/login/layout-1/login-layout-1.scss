@@ -1,0 +1,98 @@
+/*  #Style Login + logo 1
+================================================*/
+login-layout-1 {
+  ion-grid,
+  ion-row {
+    height: 100%;
+  }
+  // Settings Logo
+  img {
+    max-width: 72px;
+    max-height: 72px;
+    margin-bottom: 24px;
+    display: block;
+  }
+
+  [stacked] {
+    font-size: 10px !important;
+  }
+
+  p {
+    font-size: font-size-text('h5') !important;
+    line-height: 12px;
+    font-weight: 100;
+  }
+
+  [button-clear] {
+
+color: white;
+  }
+  // Settings Button
+  [bottom-form] {
+    button:nth-child(1) {
+      margin: 12px 0;
+      background: #9C27B0;
+    }
+
+    [default-button] {
+      font-weight: 400 !important;
+      background: #9C27B0;
+    }
+  }
+
+  .label-md-dark, .item-input .label-md-dark, .item-select .label-md-dark, .item-datetime .label-md-dark {
+    color: #fff!important;
+}
+
+.item-md {
+    padding-left: 16px;
+    padding-right: 0;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: none;
+    color: #fff;
+    background-color: white;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+/********************************/
+img {
+    max-width: 77px;
+    max-height: 86px;
+    margin-bottom: 24px;
+    display: block;
+    /* text-align: center; */
+    margin: auto;
+}
+[bottom-form] button:nth-child(1) {
+    margin: 12px 0;
+    margin-top: -102px;
+}
+
+
+.item-md {
+    padding-left: 16px;
+    padding-right: 0;
+    position: relative;
+    font-size: 1.6rem;
+    font-weight: normal;
+    text-transform: none;
+    color: #fff;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: background-color 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+h2 {
+    margin-top: 1.8rem;
+    font-size: 1.9rem;
+    color: #fff;
+    font-family: serif;
+}
+
+}

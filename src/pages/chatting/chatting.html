@@ -1,0 +1,51 @@
+<!--
+  Generated template for the ChattingPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    <ion-navbar>
+        <!-- <button ion-button style="background-color: transparent;">
+            <ion-icon (click)="ChattingBack()" name="arrow-round-back"></ion-icon>
+        </button> -->
+        <button ion-button menuToggle *ngIf='!fromList'>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-buttons right>
+            <button style="background-color:transparent;" (click)="logOut()">
+                <ion-icon name="log-out" color="primary" style="position:relative; font-size:18px; color: #fff;">
+                    <span>Logout</span>
+                </ion-icon>
+            </button>
+        </ion-buttons>
+        <ion-title></ion-title>
+    </ion-navbar>
+</ion-header>
+
+
+<ion-content padding class="chatt">
+    <ion-list *ngIf="chatRooms.length >0">
+        <ion-item *ngFor="let room of chatRooms" (click)="openChat(room)" [class.hasUnreadMsg]="room.hasUnreadMsg">
+            <ion-avatar item-start>
+                <img src="assets/images/background/2.jpg" >
+            </ion-avatar>
+            <h2>{{room.user_name}}</h2>
+            <p>{{room.last_message}}</p>
+            <h1>{{room.last_msg_timestamp*1000 | date :'short'}}</h1>
+        </ion-item>
+    </ion-list>
+    <!--<ion-list>-->
+    <!--<ion-item>-->
+    <!--<ion-avatar item-start>-->
+    <!--<img src="assets/images/background/2.jpg">-->
+    <!--</ion-avatar>-->
+    <!--<h2>Venue Test</h2>-->
+    <!--<h3>Urban Bridge</h3>-->
+    <!--<p>I've had a pretty messed up day.</p>-->
+    <!--<h1> 12.09 AM</h1>-->
+
+    <!--</ion-item>-->
+    <!--</ion-list>-->
+
+</ion-content>

@@ -1,0 +1,44 @@
+page-guestlist {
+
+
+.grid.main{
+	font-size: 18px;
+    padding-left: 17px;
+    font-weight: bold;
+    color: #000;
+}
+
+
+.grid.head {
+    border-bottom: 1px solid rgba(41, 47, 54, 0.231373);
+    padding: 10px;
+    background-color:rgba(41, 47, 54, 0.23137254901960785) ;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.grid.con {
+    border-bottom: 1px solid ;
+    background-color: white;
+    padding: 10px;
+    }
+
+span{
+	color:#fff;
+	font-size:16px;
+}
+
+[col-2] {
+   
+    text-align: center;
+}
+
+[col-2].in {
+   
+       color: #11e03e;
+}
+
+
+
+}

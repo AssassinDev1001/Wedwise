@@ -1,0 +1,406 @@
+<ion-header>
+    <ion-navbar color="#9C27B0">
+
+        <button ion-button menuToggle>
+            <ion-icon name="menu"></ion-icon>
+        </button>
+        <ion-title>Find Vendors Near Me</ion-title>
+        
+<!--         <ion-buttons right>
+            <button *ngIf='isVendor' style="background-color:transparent;" (click)="openPopover($event,notificationCount)">
+                            <ion-icon name="notifications"  style="position:relative; font-size:2em;color:white;"  >
+                                <span class="bell-icon" *ngIf='notificationCount == 1'>1</span>
+                            </ion-icon>
+            </button>
+        </ion-buttons> -->
+          <ion-buttons right class="bttn">
+        <button class="bttn"><img src="assets/imgs/map.png" style="height: 32px; width: 32px"></button>
+    </ion-buttons>
+     
+
+    </ion-navbar>
+</ion-header>
+<ion-content>
+    <!--
+
+    <ion-card (click)="wedevents()" *ngFor="let cate of catag | async">
+
+    <ion-item>
+      <ion-avatar item-start   >
+        <img src="{{cate.backgroundImage}}">
+      </ion-avatar>
+
+      <ion-grid>
+         <h3>{{cate.category}}</h3>
+    <ion-row>
+      <ion-col col-3 ><h2> ⭐⭐⭐⭐⭐</h2></ion-col>
+
+
+      <ion-col col-6>
+    <ion-icon name="pin" style="    padding-left: 53px;
+      margin-top: 4px;
+      font-size: 13px"></ion-icon>
+       9.3 km</ion-col>
+    </ion-row>
+  </ion-grid>
+    <ion-card-content>
+      <h2>{{cate.description}}</h2>
+      <p>Openting hours 8 am to 5pm</p>
+    </ion-card-content>
+
+    </ion-item>
+
+
+    <ion-row>
+       <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="call"></ion-icon>
+         </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="mail"></ion-icon>
+         </button>
+      </ion-col>
+      <ion-col>
+        <button ion-button icon-start clear small>
+          <ion-icon name="chatboxes"></ion-icon>
+
+        </button>
+      </ion-col>
+      <ion-col center text-center>
+         <button ion-button icon-start clear small>
+          <ion-icon name="heart-outline"></ion-icon>
+
+        </button>
+      </ion-col>
+    </ion-row>
+
+  </ion-card>
+..-->
+
+
+                <div>        <ion-card>
+
+            <ion-item no-lines color="light">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/user.png" (click)="wedevents()">
+                </ion-avatar>
+
+<!--                     <h3>{{restaurant.title}}</h3>
+ -->                   <div class="head">Location Name </div>
+              <ion-row>
+<div class="r">
+                <div class="row">
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s1">
+  </div>
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;"  class="s2">
+  </div>
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s3">
+  </div>
+    <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s4">
+  </div>
+    <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s5">
+  </div>
+</div>
+</div>
+              </ion-row>
+                        <ion-row no-lines>
+                        <ion-col col-3>
+                    <div class="headd">Brackenfell, Cape Town</div>
+                  </ion-col>
+
+                        <ion-col col-6 class="oo">
+
+    <img src="assets/imgs/lcoation.png" class="pin" style="    padding-left: 110px;
+    margin-top: 4px;
+    font-size: 14px" ><div class="km">9.3km</div>
+                            
+                        </ion-col>
+                      </ion-row>
+
+
+
+            </ion-item>
+
+
+            <ion-row class="roww" no-lines>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="callmyNumber()">
+                      <img src="assets/imgs/call.png" class="imgg">    
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="openemail()">
+                      <img src="assets/imgs/message.png" class="imgg1">   
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="openChat(restaurant)">
+                      <img src="assets/imgs/cha.png" class="imgg2">  
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="addFavourate()"
+                            *ngIf="this.global.showicon == false">
+                        <img src="assets/imgs/heart.png" class="imgg3">
+                    </button>
+                    <button ion-button icon-start clear small (click)="addFavourates()"
+                            *ngIf="this.global.showicon == true">
+                         <img src="assets/imgs/hear.png" class="imgg3">
+
+                    </button>
+                </ion-col>
+            </ion-row>
+
+        </ion-card> </div>
+
+
+                <div>        <ion-card>
+
+            <ion-item no-lines color="light">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/user.png" (click)="wedevents()">
+                </ion-avatar>
+
+<!--                     <h3>{{restaurant.title}}</h3>
+ -->                   <div class="head">Location Name </div>
+              <ion-row>
+<div class="r">
+                <div class="row">
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s1">
+  </div>
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;"  class="s2">
+  </div>
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s3">
+  </div>
+    <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s4">
+  </div>
+    <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s5">
+  </div>
+</div>
+</div>
+              </ion-row>
+                        <ion-row no-lines>
+                        <ion-col col-3>
+                    <div class="headd">Brackenfell, Cape Town</div>
+                  </ion-col>
+
+                        <ion-col col-6 class="oo">
+
+    <img src="assets/imgs/lcoation.png" class="pin" style="    padding-left: 110px;
+    margin-top: 4px;
+    font-size: 14px" ><div class="km">9.3km</div>
+                            
+                        </ion-col>
+                      </ion-row>
+
+
+
+            </ion-item>
+
+
+            <ion-row class="roww" no-lines>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="callmyNumber()">
+                      <img src="assets/imgs/call.png" class="imgg">    
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="openemail()">
+                      <img src="assets/imgs/message.png" class="imgg1">   
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="openChat(restaurant)">
+                      <img src="assets/imgs/cha.png" class="imgg2">  
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="addFavourate()"
+                            *ngIf="this.global.showicon == false">
+                        <img src="assets/imgs/heart.png" class="imgg3">
+                    </button>
+                    <button ion-button icon-start clear small (click)="addFavourates()"
+                            *ngIf="this.global.showicon == true">
+                         <img src="assets/imgs/hear.png" class="imgg3">
+
+                    </button>
+                </ion-col>
+            </ion-row>
+
+        </ion-card> </div>
+
+
+                <div>        <ion-card>
+
+            <ion-item no-lines color="light">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/user.png" (click)="wedevents()">
+                </ion-avatar>
+
+<!--                     <h3>{{restaurant.title}}</h3>
+ -->                   <div class="head">Location Name </div>
+              <ion-row>
+<div class="r">
+                <div class="row">
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s1">
+  </div>
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;"  class="s2">
+  </div>
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s3">
+  </div>
+    <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s4">
+  </div>
+    <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s5">
+  </div>
+</div>
+</div>
+              </ion-row>
+                        <ion-row no-lines>
+                        <ion-col col-3>
+                    <div class="headd">Brackenfell, Cape Town</div>
+                  </ion-col>
+
+                        <ion-col col-6 class="oo">
+
+    <img src="assets/imgs/lcoation.png" class="pin" style="    padding-left: 110px;
+    margin-top: 4px;
+    font-size: 14px" ><div class="km">9.3km</div>
+                            
+                        </ion-col>
+                      </ion-row>
+
+
+
+            </ion-item>
+
+
+            <ion-row class="roww" no-lines>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="callmyNumber()">
+                      <img src="assets/imgs/call.png" class="imgg">    
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="openemail()">
+                      <img src="assets/imgs/message.png" class="imgg1">   
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="openChat(restaurant)">
+                      <img src="assets/imgs/cha.png" class="imgg2">  
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="addFavourate()"
+                            *ngIf="this.global.showicon == false">
+                        <img src="assets/imgs/heart.png" class="imgg3">
+                    </button>
+                    <button ion-button icon-start clear small (click)="addFavourates()"
+                            *ngIf="this.global.showicon == true">
+                         <img src="assets/imgs/hear.png" class="imgg3">
+
+                    </button>
+                </ion-col>
+            </ion-row>
+
+        </ion-card> </div>
+
+        
+                <div>        <ion-card>
+
+            <ion-item no-lines color="light">
+                <ion-avatar item-start>
+                    <img src="assets/imgs/user.png" (click)="wedevents()">
+                </ion-avatar>
+
+<!--                     <h3>{{restaurant.title}}</h3>
+ -->                   <div class="head">Location Name </div>
+              <ion-row>
+<div class="r">
+                <div class="row">
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s1">
+  </div>
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;"  class="s2">
+  </div>
+  <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s3">
+  </div>
+    <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s4">
+  </div>
+    <div class="column">
+    <img src="assets/imgs/star.png" alt="Snow" style="width:23px; height:23px;" class="s5">
+  </div>
+</div>
+</div>
+              </ion-row>
+                        <ion-row no-lines>
+                        <ion-col col-3>
+                    <div class="headd">Brackenfell, Cape Town</div>
+                  </ion-col>
+
+                        <ion-col col-6 class="oo">
+
+    <img src="assets/imgs/lcoation.png" class="pin" style="    padding-left: 110px;
+    margin-top: 4px;
+    font-size: 14px" ><div class="km">9.3km</div>
+                            
+                        </ion-col>
+                      </ion-row>
+
+
+
+            </ion-item>
+
+
+            <ion-row class="roww" no-lines>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="callmyNumber()">
+                      <img src="assets/imgs/call.png" class="imgg">    
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="openemail()">
+                      <img src="assets/imgs/message.png" class="imgg1">   
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="openChat(restaurant)">
+                      <img src="assets/imgs/cha.png" class="imgg2">  
+                    </button>
+                </ion-col>
+                <ion-col>
+                    <button ion-button icon-start clear small (click)="addFavourate()"
+                            *ngIf="this.global.showicon == false">
+                        <img src="assets/imgs/heart.png" class="imgg3">
+                    </button>
+                    <button ion-button icon-start clear small (click)="addFavourates()"
+                            *ngIf="this.global.showicon == true">
+                         <img src="assets/imgs/hear.png" class="imgg3">
+
+                    </button>
+                </ion-col>
+            </ion-row>
+
+        </ion-card> </div>
+
+    </ion-content>

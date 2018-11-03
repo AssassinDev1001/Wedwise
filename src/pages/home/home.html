@@ -1,0 +1,91 @@
+<!---
+
+<ion-header>
+  <ion-navbar>
+  
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+	
+	
+    <ion-title>Login</ion-title>
+  </ion-navbar>
+</ion-header>
+
+-->
+<!--
+<ion-content class="background">
+
+	        <img  class="img"  src="assets/imgs/logow.png" style="width: 35%;" />
+
+        <ion-card class="cc">
+        <ion-item>
+           <ion-label floating > <div class="font"> Email</div> </ion-label>
+            <ion-input type="email"  class="font"></ion-input>
+        </ion-item>
+
+
+        <ion-item>
+            <ion-label floating><ion-icon src="assets/imgs/icon1.png"></ion-icon> <div class="font">Password</div></ion-label>
+            <ion-input type="password" class="font"></ion-input>
+        </ion-item>
+</ion-card>
+
+        
+        <ion-item text-center>
+            <button ion-button block full (click) = "login()" style="zoom:1.4;" color="purple"> Log In</button>
+            <br>
+            <p class="color">Don't have a account? <a href=""><strong class="color" (click) ="push()">Register Now</strong></a></p>
+        </ion-item>
+        
+
+        
+ </ion-content>
+
+
+ -->
+
+<ion-content padding class="bg-image" style="text-align: center;">
+
+  <ion-img style="width:50%; height:auto;object-fit: resize;background: transparent; margin: 15% auto 30px; text-align: center; contain:none;"
+    src="assets/imgs/logow.png" class="img-logo"></ion-img>
+
+
+
+  <ion-list>
+
+    <ion-item>
+      <ion-input type="email" placeholder="Username" class="input-field usr"></ion-input>
+    </ion-item>
+
+    <ion-item>
+      <ion-input type="password" placeholder="Password" class="input-field pwd"></ion-input>
+    </ion-item>
+
+    <!-- </ion-list>
+
+
+
+
+
+	<ion-list>
+		<ion-item class="transparent">
+			<ion-label floating class="label-inp">Username</ion-label>
+			<ion-input type="text" class="input-field usr"></ion-input>
+		</ion-item>
+
+		<ion-item class="transparent">
+			<ion-label floating class="label-inp">Password</ion-label>
+			<ion-input type="password" class="input-field pwd"></ion-input>
+		</ion-item> -->
+    <p style="margin: 10px 5px 15px 0; color: #ffffff; text-align: right; float: right;">Forgot Password? </p>
+  </ion-list>
+
+  <div>
+    <button block ion-button style="padding: 30px 0; text-transform: capitalize; border-radius: 3px; margin-top: 20px;"
+      (click)="login()">Login</button>
+  </div>
+  <p style="margin: 25px 0 0; color: #ffffff;">Don’t have a account? <a href="" style="color:white;text-decoration:none;"
+      (click)="push()"><strong>Register Now</strong></a></p>
+
+</ion-content>

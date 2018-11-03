@@ -1,0 +1,7 @@
+{
+  "name": "Wedwise",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}

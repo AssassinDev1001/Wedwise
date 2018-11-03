@@ -1,0 +1,204 @@
+page-event {
+.card-background-page {
+
+  ion-card {
+    position: relative;
+    text-align: left;
+  }
+
+  .card-title {
+    position: absolute;
+    top: 36%;
+    font-size: 2.0em;
+    width: 100%;
+    font-weight: bold;
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #fff;
+  }
+
+}
+
+.des{
+
+    text-align: center;
+
+    
+
+}
+.item {
+
+    border-bottom: 1px solid #a31aff;
+}
+
+.font {
+  color: #ffffff ;
+  font-size: 16px;
+}
+
+.itemm {
+    border-bottom: 1px solid #a31aff;
+        border-top: 1px solid #a31aff;
+
+}
+.card-background-page .card-title {
+    position: absolute;
+    top: 7%;
+      font-family: "Proxima Nova Soft", "Helvetica Neue", sans-serif;
+      font-size: 20px;
+          width: 100%;
+    font-weight: bold;
+    color: #fff;
+    text-shadow: none;
+        padding-left: 8px;
+
+}
+.card-background-page .card-subtitle {
+    font-size: 1.0em;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    color: #fff;
+    text-align: left;
+    padding-left: 8px;
+}
+.card-background-page .card-subtitles {
+
+    /* position: absolute; */
+    top: 22%;
+    font-size: 17px;
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    /* text-align: left; */
+    padding-left: 8px;
+
+    }
+
+    .card-md {
+    margin: 0px 0px 16px;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 1.4rem;
+    background: #CDDC39;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card-md {
+    margin: 0px 0px 16px;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 1.4rem;
+    background: transparent;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+}
+
+.card-content-md {
+       padding: 18px 19px;
+    font-size: 1.4rem;
+    line-height: 1.5;
+    border-bottom: 1px solid rgba(158, 158, 158, 0.72);
+    text-align: justify;
+        font-family: serif;
+}
+.card-background-page ion-card.bac {
+        padding: 30px; 
+      box-shadow: none;
+        padding: 30px;
+    border-bottom: 1px solid #000000;
+
+}
+
+.button-md.rev{
+    border-radius: 24px !important;
+    background-color: #231712;
+    margin-top: 10px;
+    margin-bottom: 13px;
+    }
+    .list-md.lis {
+    margin: 0px -13px 9px;
+   border-bottom: 1px solid rgba(0, 0, 0, 0.65);
+    /* min-height: 93px; */
+    padding: 6px;
+}
+
+.item-md p {
+    margin: 0 0 2px;
+    overflow: inherit;
+    font-size: 0.9rem;
+    line-height: normal;
+    text-overflow: inherit;
+    color: #666;
+}
+span{
+    font-size: 12px;
+    padding-right: 8px;
+    color: #9E9E9E;
+}
+
+.item-md ion-thumbnail[item-start] {
+    margin: 8px -38px 8px 0;
+}
+
+.item-md ion-thumbnail img {
+       width: 62px;
+    height: 56px;
+    margin-top: 32px;;
+}
+.card-md h2 {
+    margin: 2px 0;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #9E9E9E;
+ font-family: serif;
+}
+
+.item-md.navig {
+
+    color: #000000;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.57);
+   
+}
+
+.item-md {
+height: 52px;
+}
+
+.swiper-slide img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+}
+
+.label-md {
+   
+    font-family: serif;
+}
+
+
+.thumb-img{
+    
+    padding:10px;
+}
+
+ion-slide.swiper-slide{
+    life:25%;
+}
+
+
+.swiper-slide {
+
+  width: 33.3% !important;
+  
+}
+}
